@@ -1,10 +1,11 @@
 import React from "react";
+import EmblaCarousel from "./components/heroCarousel";
 
 export default function Page() {
   return (
     <>
       <div>
-        <h1>HELLO</h1>
+        <EmblaCarousel />
       </div>
     </>
   );
