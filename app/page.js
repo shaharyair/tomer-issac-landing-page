@@ -1,3 +1,4 @@
+import AboutTomer from "@/components/aboutTomer";
 import HeroCarousel from "@/components/heroCarousel";
 import ShowcaseCarousel from "@/components/showcaseCarousel";
 
@@ -9,6 +10,7 @@ export default function Page() {
         <ShowcaseCarousel />
         <ShowcaseCarousel />
         <ShowcaseCarousel />
+        <AboutTomer />
       </div>
     </>
   );
