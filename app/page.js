@@ -1,11 +1,14 @@
-import React from "react";
-import EmblaCarousel from "./components/heroCarousel";
+import HeroCarousel from "@/components/heroCarousel";
+import ShowcaseCarousel from "@/components/showcaseCarousel";
 
 export default function Page() {
   return (
     <>
       <div>
-        <EmblaCarousel />
+        <HeroCarousel />
+        <ShowcaseCarousel />
+        <ShowcaseCarousel />
+        <ShowcaseCarousel />
       </div>
     </>
   );
