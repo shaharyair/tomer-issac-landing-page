@@ -1,4 +1,4 @@
-import Navbar from "./components/navbar";
+import Navbar from "../components/navbar";
 import "./globals.css";
 import { Open_Sans } from "next/font/google";
 

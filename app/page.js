@@ -1,11 +1,10 @@
-import React from "react";
-import EmblaCarousel from "./components/heroCarousel";
+import HeroCarousel from "@/components/heroCarousel";
 
 export default function Page() {
   return (
     <>
       <div>
-        <EmblaCarousel />
+        <HeroCarousel />
       </div>
     </>
   );
