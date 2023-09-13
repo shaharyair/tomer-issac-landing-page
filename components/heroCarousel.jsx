@@ -19,7 +19,7 @@ export default function HeroCarousel() {
 
   return (
     <>
-      <EmblaCarousel slideStyle={'w-screen h-[80vh] object-cover object-center'} options={{loop: true, align: 'center', skipSnaps: true, duration: 50}} slides={slides} plugins={[Autoplay(autoplayOptions)]}  / >   
+      <EmblaCarousel slideStyle={'w-screen h-[80vh] object-cover object-center'} containerStyle={'overflow-hidden'} options={{loop: true, align: 'center', skipSnaps: true, duration: 50}} slides={slides} plugins={[Autoplay(autoplayOptions)]}  / >   
     </>
   );
 }
