@@ -28,6 +28,15 @@ module.exports = {
       transitionProperty: {
         mobileNavbar: "right, transform",
       },
+      keyframes: {
+        "fade-in": {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      },
+      animation: {
+        "fade-in": "fade-in 0.3s ease forwards",
+      },
     },
   },
   plugins: [],
