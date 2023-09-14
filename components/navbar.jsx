@@ -58,17 +58,17 @@ function Navbar() {
 
   return (
     <>
-      <nav className="fixed left-0 top-0 z-50 flex h-navbarHeight w-full items-center justify-center bg-navbarBlack/75 drop-shadow-lg backdrop-blur-sm">
+      <nav className="fixed left-0 top-0 z-50 flex h-navbarHeight w-full items-center justify-center bg-navbarBlack/80 drop-shadow-lg backdrop-blur-sm">
         <div
           ref={navbarRef}
-          className="container flex items-center justify-between px-5 text-white"
+          className="container flex items-center justify-between px-3 text-white lg:px-5"
         >
           <ComponentLinks mobileNavbar={mobileNavbar} />
           <Link
             href="#home"
-            className="text-main p-2 text-3xl lg:order-3 lg:p-0"
+            className="p-2 text-2xl text-main lg:order-3 lg:p-0 lg:text-3xl"
           >
-            <h1 className="font-extralight tracking-widest">TOMER</h1>
+            <h1 className="font-extralight tracking-widest">Cashiyado</h1>
           </Link>
           <SocialLinks />
           <HamburgerButton
@@ -107,11 +107,6 @@ function SocialLinks() {
             <FaTiktok />
           </div>
         </Link>
-        <Link href="">
-          <div className="rounded-full bg-black p-2 transition-colors duration-300 hover:bg-white hover:text-black">
-            <FaWhatsapp />
-          </div>
-        </Link>
       </div>
     </>
   );
@@ -121,45 +116,46 @@ function ComponentLinks({ mobileNavbar }) {
   return (
     <>
       <div
+        style={{ direction: "rtl" }}
         className={` ${
           mobileNavbar && "right-0"
-        } absolute -right-3/4 top-navbarHeight flex h-screen w-3/4 flex-col items-center justify-start divide-y divide-white/20 bg-navbarBlack/50 pt-2 text-center text-lg font-extralight text-white backdrop-blur-sm transition-mobileNavbar duration-150 lg:static lg:right-auto lg:top-auto lg:order-2 lg:mr-5 lg:h-auto lg:w-auto lg:flex-row lg:justify-center lg:gap-3 lg:divide-y-0 lg:bg-transparent lg:p-0 lg:backdrop-blur-none lg:transition-none`}
+        } absolute -right-3/4 top-navbarHeight flex h-screen w-3/4 flex-col items-center justify-start divide-y divide-white/20 whitespace-nowrap bg-navbarBlack pt-2 text-center text-lg font-extralight text-white backdrop-blur-sm transition-mobileNavbar duration-150 lg:static lg:right-auto lg:top-auto lg:order-2 lg:mr-5 lg:h-auto lg:w-auto lg:flex-row lg:justify-center lg:gap-3 lg:divide-y-0 lg:bg-transparent lg:p-0 lg:backdrop-blur-none lg:transition-none `}
       >
         <Link
           href="#home"
-          className="hover:text-main w-[95%] p-5 transition-colors  duration-300 lg:rounded-sm lg:px-4 lg:py-2"
+          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-4 lg:py-2"
         >
           ראשי
         </Link>
         <Link
           href="#home"
-          className="hover:text-main w-[95%] p-5 transition-colors  duration-300 lg:rounded-sm lg:px-4 lg:py-2"
+          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-4 lg:py-2"
         >
           ראשי
         </Link>
         <Link
           href="#home"
-          className="hover:text-main w-[95%] p-5 transition-colors  duration-300 lg:rounded-sm lg:px-4 lg:py-2 "
+          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-4 lg:py-2"
         >
           ראשי
         </Link>
         <Link
           href="#home"
-          className="hover:text-main w-[95%] p-5 transition-colors  duration-300 lg:rounded-sm lg:px-4 lg:py-2 "
+          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-4 lg:py-2"
         >
           ראשי
         </Link>
         <Link
           href="#home"
-          className="hover:text-main w-[95%] p-5 transition-colors  duration-300 lg:rounded-sm lg:px-4 lg:py-2 "
+          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-4 lg:py-2"
         >
-          ראשי
+          Mashups
         </Link>
         <Link
           href="#home"
-          className="hover:text-main w-[95%] p-5 transition-colors  duration-300 lg:rounded-sm lg:px-4 lg:py-2 "
+          className="w-[95%] p-5 transition-colors  duration-300 hover:bg-main lg:rounded-sm lg:px-4 lg:py-2"
         >
-          ראשי
+          צור קשר
         </Link>
       </div>
     </>
