@@ -4,14 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
 import { Fade as Hamburger } from "hamburger-react";
-import {
-  FaInstagram,
-  FaYoutube,
-  FaFacebookF,
-  FaPhone,
-  FaTiktok,
-  FaWhatsapp,
-} from "react-icons/fa6";
+import { FaInstagram, FaYoutube, FaFacebookF, FaTiktok } from "react-icons/fa6";
 
 function Navbar() {
   const [mobileNavbar, setMobileNavbar] = useState(false);
@@ -119,41 +112,47 @@ function ComponentLinks({ mobileNavbar }) {
         style={{ direction: "rtl" }}
         className={` ${
           mobileNavbar && "right-0"
-        } absolute -right-3/4 top-navbarHeight flex h-screen w-3/4 flex-col items-center justify-start divide-y divide-white/20 whitespace-nowrap bg-navbarBlack pt-2 text-center text-lg font-extralight text-white backdrop-blur-sm transition-mobileNavbar duration-150 lg:static lg:right-auto lg:top-auto lg:order-2 lg:mr-5 lg:h-auto lg:w-auto lg:flex-row lg:justify-center lg:gap-3 lg:divide-y-0 lg:bg-transparent lg:p-0 lg:backdrop-blur-none lg:transition-none `}
+        } absolute -right-3/4 top-navbarHeight flex h-screen w-3/4 flex-col items-center justify-start divide-y divide-white/20 whitespace-nowrap bg-navbarBlack pt-2 text-center text-lg font-extralight text-white backdrop-blur-sm transition-mobileNavbar duration-150 lg:static lg:right-auto lg:top-auto lg:order-2 lg:mr-5 lg:h-auto lg:w-auto lg:flex-row lg:justify-center lg:gap-1 lg:divide-y-0 lg:rounded-lg lg:bg-transparent lg:p-0 lg:backdrop-blur-none lg:transition-none `}
       >
         <Link
           href="#home"
-          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-4 lg:py-2"
+          className="w-[95%] p-5 transition-colors  duration-300 hover:bg-main lg:rounded-sm lg:px-2.5 lg:py-1.5"
         >
           ראשי
         </Link>
         <Link
           href="#home"
-          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-4 lg:py-2"
+          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-2.5 lg:py-1.5"
         >
-          ראשי
+          סרטי שיווק והדרכה
         </Link>
         <Link
           href="#home"
-          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-4 lg:py-2"
+          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-2.5 lg:py-1.5"
         >
-          ראשי
+          תמונות סטילס
         </Link>
         <Link
           href="#home"
-          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-4 lg:py-2"
+          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-2.5 lg:py-1.5"
         >
-          ראשי
+          קליפים מוזיקליים
         </Link>
         <Link
           href="#home"
-          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-4 lg:py-2"
+          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-2.5 lg:py-1.5"
         >
-          Mashups
+          עריכת פודקאסטים
         </Link>
         <Link
           href="#home"
-          className="w-[95%] p-5 transition-colors  duration-300 hover:bg-main lg:rounded-sm lg:px-4 lg:py-2"
+          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-2.5 lg:py-1.5"
+        >
+          משאפים
+        </Link>
+        <Link
+          href="#home"
+          className="w-[95%] p-5 transition-colors  duration-300 hover:bg-main lg:rounded-sm lg:px-3 lg:py-2"
         >
           צור קשר
         </Link>
