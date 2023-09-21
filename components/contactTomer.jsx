@@ -1,8 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import { z } from "zod";
 import Dialog from "./dialog";
 import Button from "./button";
+
+// Define validation schemas
+const fullNameSchema = z
+  .string()
+  .min(2)
+  .max(50)
+  .regex(/[a-zA-Z א-ת]+/);
+const phoneNumberSchema = z.string().regex(/[0][\d]{0,9}/);
 
 const ContactTomer = () => {
   const [dialog, setDialog] = useState("");
@@ -15,23 +24,29 @@ const ContactTomer = () => {
     e.preventDefault();
 
     try {
+      // Validate the form data using zod schemas
+      const validatedData = {
+        fullName: fullNameSchema.parse(emailData.fullName),
+        phoneNumber: phoneNumberSchema.parse(emailData.phoneNumber),
+      };
+
       const response = await fetch("/api/sendEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(emailData),
+        body: JSON.stringify(validatedData),
       });
 
       if (response.ok) {
         console.log("Email sent successfully!");
-        setDialog("! פרטים נשלחו");
+        setDialog("פרטים נשלחו!\nאחזור אליכם בקרוב 📸");
       } else {
         console.error("Error sending email:", response.statusText);
       }
     } catch (error) {
       console.error("Error sending email:", error.message);
-      setDialog(error.message);
+      setDialog(".שליחת האימייל נכשלה");
     } finally {
       setEmailData({
         fullName: "",
