@@ -72,6 +72,21 @@ const stillImages = [
   ),
 ];
 
+const musicalClips = [
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/1glnGCKnkAEsBJWbBa2tyTc65b5QGp0Io/view?usp=drive_link",
+  ),
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/118PCA80ZuMr6oq8juvwB_vwNp9N54ugt/view?usp=drive_link",
+  ),
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/1N9prjH8mBoopT91dibqzcefuQGqFwLGV/view?usp=drive_link",
+  ),
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/1-i5Iq5r3gftRldW1ORnlnsf3AE_kDjlI/view?usp=drive_link",
+  ),
+];
+
 const mashupVideos = [
   getDirectDriveLink(
     "https://drive.google.com/file/d/16bF_wOV0VJ_V3hK-28qyg7yMyOnYHT6F/view?usp=drive_link", // אדל + רייכל + ברי
@@ -87,9 +102,26 @@ const mashupVideos = [
   ),
 ];
 
+const podcastsEditsVideos = [
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/1ERT48zwXpfTmZJCgCATP0d3yRf6JFGR7/view?usp=drive_link",
+  ),
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/1qyBXKebpSoS_sLgswF_UT6oP3-80JmnZ/view?usp=drive_link",
+  ),
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/1ZyJYKZHeq5UL1hd4-b3Vfa2jQ8bIY5bq/view?usp=drive_link",
+  ),
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/1T0-LGJsfV1Q3T7cpAmnRr2O26HBOMRmh/view?usp=drive_link",
+  ),
+];
+
 export {
   heroCarouselImages,
   marketingGuidanceVideosUrl,
   stillImages,
   mashupVideos,
+  musicalClips,
+  podcastsEditsVideos,
 };
