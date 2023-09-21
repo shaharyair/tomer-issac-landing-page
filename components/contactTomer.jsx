@@ -69,7 +69,7 @@ const ContactTomer = () => {
           style={{ direction: "rtl" }}
         >
           <h1 className="drop-shadow-stroke whitespace-nowrap text-3xl font-semibold text-white lg:text-4xl">
-            צור קשר
+            <span className="text-main">צור</span> קשר
           </h1>
           <form
             onSubmit={sendEmail}
