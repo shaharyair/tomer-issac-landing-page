@@ -28,7 +28,7 @@ function MarketingGuidanceVideoCarousel() {
       className="mt-5 flex h-full w-full flex-col items-center justify-center gap-5"
       id="marketing-guidance-videos"
     >
-      <h1 className="text-4xl font-thin text-white drop-shadow-md">
+      <h1 className="drop-shadow-stroke text-4xl font-thin text-white">
         <span className="text-main">סרטי</span> שיווק והדרכה
       </h1>
       <EmblaCarousel
@@ -56,7 +56,7 @@ function StillImagesCarousel() {
       className="mt-5 flex h-full w-full flex-col items-center justify-center gap-1"
       id="still-images"
     >
-      <h1 className="text-4xl font-thin text-white drop-shadow-md">
+      <h1 className="drop-shadow-stroke text-4xl font-thin text-white">
         <span className="text-main">תמונות</span> סטילס
       </h1>
       <EmblaCarousel
@@ -83,7 +83,7 @@ function MashupVideosCarousel() {
       className="mt-5 flex h-full w-full flex-col items-center justify-center gap-5"
       id="mashups-videos"
     >
-      <h1 className="text-4xl font-thin text-white drop-shadow-md">
+      <h1 className="drop-shadow-stroke text-4xl font-thin text-white">
         <span className="text-main">מש</span>אפים
       </h1>
       <EmblaCarousel
@@ -112,7 +112,7 @@ function MusicalClipsCarousel() {
       className="mt-5 flex h-full w-full flex-col items-center justify-center gap-5"
       id="musical-clips"
     >
-      <h1 className="text-4xl font-thin text-white drop-shadow-md">
+      <h1 className="drop-shadow-stroke text-4xl font-thin text-white">
         <span className="text-main">קליפים</span> מוזיקליים
       </h1>
       <EmblaCarousel
@@ -140,7 +140,7 @@ function PodcastsEditsCarousel() {
       className="mt-5 flex h-full w-full flex-col items-center justify-center gap-5"
       id="podcasts-edits"
     >
-      <h1 className="text-4xl font-thin text-white drop-shadow-md">
+      <h1 className="drop-shadow-stroke text-4xl font-thin text-white">
         <span className="text-main">עריכת</span> פודקאסטים
       </h1>
       <EmblaCarousel
