@@ -102,6 +102,21 @@ const mashupVideos = [
   ),
 ];
 
+const mashupThumbnails = [
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/1YFImlJnzY1A9NKmjG_4Wa28_qwFveyMP/view?usp=drive_link",
+  ),
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/1slOlo7kG9jvOytvB_IgqAQkmymfyHDUF/view?usp=drive_link",
+  ),
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/1Pfr2onUwj_Hl6HfEBKsao19MiSD06ZV0/view?usp=drive_link",
+  ),
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/1DST1_mciR7oD8oT3grSOaqH6gfPjX2jH/view?usp=drive_link",
+  ),
+];
+
 const podcastsEditsVideos = [
   getDirectDriveLink(
     "https://drive.google.com/file/d/1ERT48zwXpfTmZJCgCATP0d3yRf6JFGR7/view?usp=drive_link",
@@ -122,6 +137,7 @@ export {
   marketingGuidanceVideosUrl,
   stillImages,
   mashupVideos,
+  mashupThumbnails,
   musicalClips,
   podcastsEditsVideos,
 };
