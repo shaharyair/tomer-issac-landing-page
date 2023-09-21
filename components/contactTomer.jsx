@@ -46,7 +46,7 @@ const ContactTomer = () => {
       }
     } catch (error) {
       console.error("Error sending email:", error.message);
-      setDialog(".שליחת האימייל נכשלה");
+      setDialog("שליחת האימייל נכשלה.");
     } finally {
       setEmailData({
         fullName: "",
@@ -64,14 +64,28 @@ const ContactTomer = () => {
     <>
       {dialog && <Dialog message={dialog} onClick={() => setDialog(false)} />}
       <div className="flex items-center justify-center ">
-        <div className="container flex w-full flex-col items-center justify-center gap-6 p-6 text-center lg:flex-row lg:gap-14">
-          <h1 className="text-3xl font-semibold text-white drop-shadow-md lg:order-2 lg:text-4xl">
-            צרו קשר
+        <div
+          className="flex w-full max-w-5xl flex-col items-center justify-center gap-6 p-6 text-center lg:flex-row lg:gap-14"
+          style={{ direction: "rtl" }}
+        >
+          <h1 className="drop-shadow-stroke whitespace-nowrap text-3xl font-semibold text-white lg:text-4xl">
+            צור קשר
           </h1>
           <form
             onSubmit={sendEmail}
-            className="flex w-full flex-col items-center justify-center gap-6 rounded-md bg-white p-6 text-right drop-shadow-md lg:w-[60%] lg:flex-row"
+            className="flex w-[90%] max-w-[350px] flex-col items-center justify-center gap-6 rounded-md bg-white p-6 text-right drop-shadow-md lg:w-full lg:max-w-none lg:flex-row"
           >
+            <input
+              type="text"
+              name="fullName"
+              placeholder="שם מלא"
+              pattern="[a-zA-Z א-ת]+"
+              title="שם מלא צריך לכלול רק אותיות בעברית או באנגלית."
+              value={emailData.fullName}
+              onChange={handleChange}
+              className="w-full max-w-[500px] rounded-md bg-gray-300 px-5 py-3 text-right placeholder:text-gray-700"
+              required
+            />
             <input
               type="text"
               name="phoneNumber"
@@ -81,18 +95,7 @@ const ContactTomer = () => {
               title="מספר הטלפון צריך לכלול רק מספרים ו10 ספרות."
               value={emailData.phoneNumber}
               onChange={handleChange}
-              className="w-full max-w-[500px] rounded-md bg-gray-200 px-5 py-3 text-right placeholder:text-gray-500"
-              required
-            />
-            <input
-              type="text"
-              name="fullName"
-              placeholder="שם מלא"
-              pattern="[a-zA-Z א-ת]+"
-              title="שם מלא צריך לכלול רק אותיות בעברית או באנגלית."
-              value={emailData.fullName}
-              onChange={handleChange}
-              className="w-full max-w-[500px] rounded-md bg-gray-200 px-5 py-3 text-right placeholder:text-gray-500"
+              className="w-full max-w-[500px] rounded-md bg-gray-300 px-5 py-3 text-right placeholder:text-gray-700"
               required
             />
             <Button
