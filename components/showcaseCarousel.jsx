@@ -20,7 +20,7 @@ export default function ShowcaseCarousel() {
 function MarketingGuidanceVideoCarousel() {
   return (
     <div
-      className="flex h-full w-full flex-col items-center justify-center pt-5"
+      className="mt-5 flex h-full w-full flex-col items-center justify-center gap-5"
       id="marketing-guidance-videos"
     >
       <h1 className="text-4xl font-thin text-white drop-shadow-md">
@@ -28,7 +28,7 @@ function MarketingGuidanceVideoCarousel() {
       </h1>
       <EmblaCarousel
         slideStyle={
-          "w-[80vw] lg:w-[35vw] h-[45vh] pt-5 mx-2 drop drop-shadow-sm"
+          "w-[85vw] lg:w-[35vw] h-[45vh] pt-5 mx-2 drop drop-shadow-sm bg-black/20"
         }
         containerStyle={"overflow-hidden"}
         options={{
@@ -48,7 +48,7 @@ function MarketingGuidanceVideoCarousel() {
 function StillImagesCarousel() {
   return (
     <div
-      className="flex h-full w-full flex-col items-center justify-center pt-5"
+      className="mt-5 flex h-full w-full flex-col items-center justify-center gap-1"
       id="still-images"
     >
       <h1 className="text-4xl font-thin text-white drop-shadow-md">
@@ -56,7 +56,7 @@ function StillImagesCarousel() {
       </h1>
       <EmblaCarousel
         slideStyle={
-          "w-[90vw] lg:w-[35vw] h-[45vh] pt-5 mx-2 drop drop-shadow-sm object-cover object-center"
+          "w-[85vw] lg:w-[35vw] h-[45vh] pt-5 mx-2 drop drop-shadow-sm object-cover object-center"
         }
         containerStyle={"overflow-hidden"}
         options={{
@@ -75,13 +75,13 @@ function StillImagesCarousel() {
 function MashupVideosCarousel() {
   return (
     <div
-      className="flex h-full w-full flex-col items-center justify-center pt-5"
+      className="mt-5 flex h-full w-full flex-col items-center justify-center gap-5"
       id="mashups-videos"
     >
       <h1 className="text-4xl font-thin text-white drop-shadow-md">משאפים</h1>
       <EmblaCarousel
         slideStyle={
-          "w-[80vw] lg:w-[35vw] h-[45vh] pt-5 mx-2 drop drop-shadow-sm"
+          "w-[85vw] lg:w-[35vw] h-[45vh] pt-5 mx-2 drop drop-shadow-sm bg-black/20"
         }
         containerStyle={"overflow-hidden"}
         options={{
