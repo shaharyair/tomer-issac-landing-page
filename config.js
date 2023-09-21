@@ -75,4 +75,24 @@ const stillImages = [
   ),
 ];
 
-export { heroCarouselImages, marketingGuidanceVideosUrl, stillImages };
+const mashupVideos = [
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/1SCjC4GGIsIj9fU4ecgrEaZRNPHk86wHo/view?usp=drive_link",
+  ),
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/10onueRpV3K6YQdtXNgVWL7VpEG0en90H/view?usp=drive_link",
+  ),
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/1e32NwTvhZuVY2KtKzzjYirxNNmPdUFUI/view?usp=drive_link",
+  ),
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/1wxEyj3sbduJomLowktn16czHdm9AQGGB/view?usp=drive_link",
+  ),
+];
+
+export {
+  heroCarouselImages,
+  marketingGuidanceVideosUrl,
+  stillImages,
+  mashupVideos,
+};
