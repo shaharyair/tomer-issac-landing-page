@@ -3,6 +3,8 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
+import { Link as ScrollLink } from "react-scroll";
+
 import { Fade as Hamburger } from "hamburger-react";
 import { FaInstagram, FaYoutube, FaFacebookF, FaTiktok } from "react-icons/fa6";
 
@@ -114,48 +116,21 @@ function ComponentLinks({ mobileNavbar }) {
           mobileNavbar && "right-0"
         } absolute -right-3/4 top-navbarHeight flex h-screen w-3/4 flex-col items-center justify-start divide-y divide-white/20 whitespace-nowrap bg-navbarBlack pt-2 text-center text-lg font-extralight text-white backdrop-blur-sm transition-mobileNavbar duration-150 lg:static lg:right-auto lg:top-auto lg:order-2 lg:mr-5 lg:h-auto lg:w-auto lg:flex-row lg:justify-center lg:gap-1 lg:divide-y-0 lg:rounded-lg lg:bg-transparent lg:p-0 lg:backdrop-blur-none lg:transition-none `}
       >
-        <Link
-          href="#home"
-          className="w-[95%] p-5 transition-colors  duration-300 hover:bg-main lg:rounded-sm lg:px-2.5 lg:py-1.5"
-        >
-          ראשי
-        </Link>
-        <Link
-          href="#home"
-          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-2.5 lg:py-1.5"
-        >
+        <ScrollLinkComponent to="home">ראשי</ScrollLinkComponent>
+        <ScrollLinkComponent to="marketing-guidance-videos">
           סרטי שיווק והדרכה
-        </Link>
-        <Link
-          href="#home"
-          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-2.5 lg:py-1.5"
-        >
+        </ScrollLinkComponent>
+        <ScrollLinkComponent to="still-images">
           תמונות סטילס
-        </Link>
-        <Link
-          href="#home"
-          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-2.5 lg:py-1.5"
-        >
+        </ScrollLinkComponent>
+        <ScrollLinkComponent to="musical-clips">
           קליפים מוזיקליים
-        </Link>
-        <Link
-          href="#home"
-          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-2.5 lg:py-1.5"
-        >
+        </ScrollLinkComponent>
+        <ScrollLinkComponent to="podcasts-edits">
           עריכת פודקאסטים
-        </Link>
-        <Link
-          href="#home"
-          className="w-[95%] p-5 transition-colors duration-300  hover:bg-main lg:rounded-sm lg:px-2.5 lg:py-1.5"
-        >
-          משאפים
-        </Link>
-        <Link
-          href="#home"
-          className="w-[95%] p-5 transition-colors  duration-300 hover:bg-main lg:rounded-sm lg:px-3 lg:py-2"
-        >
-          צור קשר
-        </Link>
+        </ScrollLinkComponent>
+        <ScrollLinkComponent to="mashups-videos">משאפים</ScrollLinkComponent>
+        <ScrollLinkComponent to="contact">צור קשר</ScrollLinkComponent>
       </div>
     </>
   );
@@ -174,6 +149,25 @@ function HamburgerButton({ mobileNavbar, handleToggle }) {
           rounded
         />
       </div>
+    </>
+  );
+}
+
+function ScrollLinkComponent(props) {
+  const { children, to } = props;
+
+  return (
+    <>
+      <ScrollLink
+        to={to}
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+        className="w-[95%] cursor-pointer p-5 transition-colors duration-300 hover:bg-main lg:rounded-sm lg:px-2.5 lg:py-1.5"
+      >
+        {children}
+      </ScrollLink>
     </>
   );
 }
