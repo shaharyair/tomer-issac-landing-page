@@ -9,8 +9,6 @@ export default function Page() {
       <div>
         <HeroCarousel />
         <ShowcaseCarousel />
-        <ShowcaseCarousel />
-        <ShowcaseCarousel />
         <AboutTomer />
         <ContactTomer />
       </div>
