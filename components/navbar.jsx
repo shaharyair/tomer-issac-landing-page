@@ -59,12 +59,16 @@ function Navbar() {
           className="container flex items-center justify-between px-3 text-white lg:px-5"
         >
           <ComponentLinks mobileNavbar={mobileNavbar} />
-          <Link
-            href="#home"
-            className="p-2 text-2xl text-main lg:order-3 lg:p-0 lg:text-3xl"
+          <ScrollLink
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="cursor-pointer p-2 text-2xl text-main lg:order-3 lg:p-0 lg:text-3xl"
           >
             <h1 className="font-extralight tracking-widest">Cashiyado</h1>
-          </Link>
+          </ScrollLink>
           <SocialLinks />
           <HamburgerButton
             mobileNavbar={mobileNavbar}
@@ -116,7 +120,7 @@ function ComponentLinks({ mobileNavbar }) {
           mobileNavbar && "right-0"
         } absolute -right-3/4 top-navbarHeight flex h-screen w-3/4 flex-col items-center justify-start divide-y divide-white/20 whitespace-nowrap bg-navbarBlack pt-2 text-center text-lg font-extralight text-white backdrop-blur-sm transition-mobileNavbar duration-150 lg:static lg:right-auto lg:top-auto lg:order-2 lg:mr-5 lg:h-auto lg:w-auto lg:flex-row lg:justify-center lg:gap-1 lg:divide-y-0 lg:rounded-lg lg:bg-transparent lg:p-0 lg:backdrop-blur-none lg:transition-none `}
       >
-        <ScrollLinkComponent to="home">ראשי</ScrollLinkComponent>
+        <ScrollLinkComponent to="hero">ראשי</ScrollLinkComponent>
         <ScrollLinkComponent to="marketing-guidance-videos">
           סרטי שיווק והדרכה
         </ScrollLinkComponent>

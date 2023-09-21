@@ -19,7 +19,7 @@ export default function HeroCarousel() {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative" id="hero">
         <EmblaCarousel
           slideStyle={
             "w-screen h-[80vh] object-cover object-center brightness-50"
