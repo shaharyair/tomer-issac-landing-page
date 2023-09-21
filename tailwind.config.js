@@ -34,9 +34,14 @@ module.exports = {
           from: { opacity: 0 },
           to: { opacity: 1 },
         },
+        "fade-out": {
+          from: { opacity: 1 },
+          to: { opacity: 0 },
+        },
       },
       animation: {
         "fade-in": "fade-in 0.3s ease forwards",
+        "loading-screen": "fade-out 0.5s ease-in forwards 4.5s",
       },
     },
   },
