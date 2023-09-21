@@ -17,6 +17,7 @@ module.exports = {
       colors: {
         backgroundBlack: "var(--foreground-rgb)",
         navbarBlack: "#101010",
+        white: "#FAF4F4",
         main: "#6D9886",
       },
       height: {
