@@ -63,7 +63,7 @@ const ContactTomer = () => {
   return (
     <>
       {dialog && <Dialog message={dialog} onClick={() => setDialog(false)} />}
-      <div className="flex items-center justify-center ">
+      <div className="flex items-center justify-center" id="contact">
         <div
           className="flex w-full max-w-5xl flex-col items-center justify-center gap-6 p-6 text-center lg:flex-row lg:gap-14"
           style={{ direction: "rtl" }}
