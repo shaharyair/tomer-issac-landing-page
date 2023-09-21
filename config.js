@@ -2,91 +2,88 @@ import getDirectDriveLink from "./utils/getDirectDriveLink";
 
 const heroCarouselImages = [
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1APW948OlYo3Hi5_pVYBFyzJPcxjuYp2c/view?usp=sharing",
+    "https://drive.google.com/file/d/1rqRSIE_P9cMAnNPl9BOCNLSj7o8Dac23/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1AvC-Fqu6wq-Mghzz4qYDG0mE0W7nr2v_/view?usp=sharing",
+    "https://drive.google.com/file/d/1iSG3_277leXgwNdgtsdhXGdMet6h9WEy/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1EqASrFzR7fRHEo6-NGSIve3M3j3xJ1kv/view?usp=sharing",
+    "https://drive.google.com/file/d/1oR60ccHdMLwG3H9qCsvriIayGb6SSm6L/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1GlTsDssiuLW57IhYhB0XQisJ-JozVqhs/view?usp=sharing",
+    "https://drive.google.com/file/d/1SyPVQ3mru2Kvhcvp4gd52F8FHvY62rCe/view?usp=drive_link",
   ),
 ];
 
 const marketingGuidanceVideosUrl = [
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1ec_0GgWQo_o2RRLp-_ogxRa2yyY3dOaO/view?usp=sharing", // חוג חינם
+    "https://drive.google.com/file/d/12wtHXP85WUJ6-NEz7Dw5IFCMNQNou_Ru/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1taLYf1tdr5FVXLoAX0OzVf7JzimT2f40/view?usp=sharing", // 60 שנה
+    "https://drive.google.com/file/d/1yGOer5ShKEjkSXuyf8PiQzi-rlEeyNWk/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1ry_EWZNioilcZIXpcHcWPHuGqodjZHms/view?usp=sharing", // בת ים פילאטיס
+    "https://drive.google.com/file/d/1E0nzY9UZ0ZYGkieiuODtwtdQDRbjZw3A/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/160aQStdE7cao8WRrrgVxQYUxFzEyElDX/view?usp=sharing", // ליהי
+    "https://drive.google.com/file/d/1rzbsEPAo9xB6WwQt-HLhxrMTHm9u_dd4/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/17-PA7xxjwe0DAVkj4-XrhHQR1MG72SwC/view?usp=sharing", // סרטון ביטחות חשמל
+    "https://drive.google.com/file/d/1eFOci_LcLkBz2qS6Y4LEkX8GPPIfxKzB/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1LTPzQXKhfkmyG7dR-nqyJ5wCzdqPr3dR/view?usp=sharing", // תצוגה רגילה לרשתות
+    "https://drive.google.com/file/d/12OcEWseLF3tnzzv8Cu9pkqNa1Iztr6E8/view?usp=drive_link",
+  ),
+  getDirectDriveLink(
+    "https://drive.google.com/file/d/1eekrjbZ-2ULWa6cDvXpZMQJBPIF2TvZ0/view?usp=drive_link",
   ),
 ];
 
 const stillImages = [
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1HSBOVq0utPy9XNgdQNJwQXjIX81RZfc8/view?usp=sharing",
+    "https://drive.google.com/file/d/17N0dIdgAgzjre-a2c1vtMak4Wbn5rmPn/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1HYd-zF3k3GirTRKAAjStJMtOU2ca-iyb/view?usp=sharing",
+    "https://drive.google.com/file/d/1L_MnPqdniA-R84lhEfQNJbPymndrHX0E/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1HOQZiWhxAeTqsxNhv8ND9w66Lqi_zFH5/view?usp=sharing",
+    "https://drive.google.com/file/d/1IHmREYTNilYcUL3SQWxXN8bLU2aE9nhO/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1HUQ7d_9XnF4pdEwVuAhMAw9TAivfrTxY/view?usp=sharing",
+    "https://drive.google.com/file/d/12ZYQrYcUz8Wkk2rPaDBwx9g3jCi-XGgS/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1HLeisF-CR9EyM1ZzK9lRUtQQUY7VIP1K/view?usp=sharing",
+    "https://drive.google.com/file/d/10_HKXzFqUKx-QJwoOImDHdnxwzopIY37/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1HUuHLEADBmw--43lzbHIdqVeJB6bim4o/view?usp=sharing",
+    "https://drive.google.com/file/d/1nNuMJoi-WbqsxfTldgvJ9zl4uiW9R6-b/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1HKP7dYDdDO0mSNs_5Yf2SY5NR5mRZzIW/view?usp=sharing",
+    "https://drive.google.com/file/d/1JOVRKl7Cd8pUvaniH_YjEKA24LiFvQgh/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1UwqsDPMFvT8ZCBbCOP1Jr3MEsZ1PqXtn/view?usp=sharing",
+    "https://drive.google.com/file/d/1rgqpmb6OpajiCrl3yS2sLCbjZetQg4d6/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1APW948OlYo3Hi5_pVYBFyzJPcxjuYp2c/view?usp=sharing",
+    "https://drive.google.com/file/d/1xty-hLYmsXJ1WDOFTPzU0CLzpe7T4pB1/view?usp=drive_link",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/17mm0Bl1pDtJYGKymlXndb3jtT80zxpsM/view?usp=sharing",
-  ),
-  getDirectDriveLink(
-    "https://drive.google.com/file/d/1hzWcWvw4eU_tdCr3OVaLnIZFrgV26OVk/view?usp=sharing",
-  ),
-  getDirectDriveLink(
-    "https://drive.google.com/file/d/18bu7B2-JTkD5Nr4qU-SZHH8ViSjvTth2/view?usp=sharing",
+    "https://drive.google.com/file/d/1z-37Z26X5n_fP45K8vujmUDy45lSLqDX/view?usp=drive_link",
   ),
 ];
 
 const mashupVideos = [
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1SCjC4GGIsIj9fU4ecgrEaZRNPHk86wHo/view?usp=drive_link",
+    "https://drive.google.com/file/d/16bF_wOV0VJ_V3hK-28qyg7yMyOnYHT6F/view?usp=drive_link", // אדל + רייכל + ברי
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/10onueRpV3K6YQdtXNgVWL7VpEG0en90H/view?usp=drive_link",
+    "https://drive.google.com/file/d/1XqIoQk57GL8H_EUFyUJ8hC0NvaQRWLpH/view?usp=drive_link", // חיים משה + דר דרה + סנופ
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1e32NwTvhZuVY2KtKzzjYirxNNmPdUFUI/view?usp=drive_link",
+    "https://drive.google.com/file/d/19eAMHFcbwFNPuV9q2Sr6omh1FzBMBLdv/view?usp=drive_link", // נעמי שמר וקוליו
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/1wxEyj3sbduJomLowktn16czHdm9AQGGB/view?usp=drive_link",
+    "https://drive.google.com/file/d/12fOo3J1ihREPHpaQTx7eRTNKvUNXB_Ic/view?usp=drive_link", // מרגול + אירופה
   ),
 ];
 
