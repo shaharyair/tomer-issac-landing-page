@@ -86,22 +86,31 @@ function SocialLinks() {
   return (
     <>
       <div className=" flex items-center justify-center gap-2 text-xl text-white lg:gap-3">
-        <Link href="https://www.instagram.com/cashiyado/">
+        <Link href="https://www.instagram.com/cashiyado/" target="_blank">
           <div className="rounded-full bg-black p-2 transition-colors duration-300 hover:bg-white hover:text-black">
             <FaInstagram />
           </div>
         </Link>
-        <Link href="https://www.facebook.com/profile.php?id=100013457760835&mibextid=nW3QTL">
+        <Link
+          href="https://www.facebook.com/profile.php?id=100013457760835&mibextid=nW3QTL"
+          target="_blank"
+        >
           <div className="rounded-full bg-black p-2 transition-colors duration-300 hover:bg-white hover:text-black">
             <FaFacebookF />
           </div>
         </Link>
-        <Link href="https://youtube.com/@Cashiyado?si=rbU4LP1UypUNhEvw">
+        <Link
+          href="https://youtube.com/@Cashiyado?si=rbU4LP1UypUNhEvw"
+          target="_blank"
+        >
           <div className="rounded-full bg-black p-2 transition-colors duration-300 hover:bg-white hover:text-black">
             <FaYoutube />
           </div>
         </Link>
-        <Link href="https://www.tiktok.com/@cashiyado?_t=8fexZHKpoMT&_r=1">
+        <Link
+          href="https://www.tiktok.com/@cashiyado?_t=8fexZHKpoMT&_r=1"
+          target="_blank"
+        >
           <div className="rounded-full bg-black p-2 transition-colors duration-300 hover:bg-white hover:text-black">
             <FaTiktok />
           </div>
