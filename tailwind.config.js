@@ -26,6 +26,9 @@ module.exports = {
       spacing: {
         navbarHeight: "5rem",
       },
+      dropShadow: {
+        stroke: "0 1.2px 1.2px rgba(0,0,0)",
+      },
       transitionProperty: {
         mobileNavbar: "right, transform",
       },
