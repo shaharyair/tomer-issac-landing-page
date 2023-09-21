@@ -45,7 +45,7 @@ export default function HeroCarousel() {
             לפרטים נוספים:
           </p>
           <div className="flex items-center justify-center gap-5 lg:gap-10">
-            <Button className="text-white">
+            <Button className=" text-white hover:border-[0.5px]">
               <a
                 href="https://api.whatsapp.com/send?phone=972507677702"
                 className="flex items-center justify-center gap-2 whitespace-nowrap"
@@ -53,7 +53,7 @@ export default function HeroCarousel() {
                 Whatsapp <FaWhatsapp className="text-xl" />
               </a>
             </Button>
-            <Button className="p-10 text-white">
+            <Button className=" text-white hover:border-[0.5px]">
               <a
                 href="tel:+972507677702"
                 className="flex items-center justify-center gap-2 whitespace-nowrap"
