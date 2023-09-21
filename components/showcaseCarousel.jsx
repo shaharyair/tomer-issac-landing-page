@@ -3,6 +3,7 @@
 import EmblaCarousel from "./carousel";
 import {
   marketingGuidanceVideosUrl,
+  mashupThumbnails,
   mashupVideos,
   musicalClips,
   podcastsEditsVideos,
@@ -98,6 +99,7 @@ function MashupVideosCarousel() {
           slidesToScroll: 1,
         }}
         slides={mashupVideos}
+        thumbnails={mashupThumbnails}
         mediaType="video"
       />
     </div>

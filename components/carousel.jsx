@@ -4,8 +4,15 @@ import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 
 const EmblaCarousel = (props) => {
-  const { options, slides, plugins, slideStyle, containerStyle, mediaType } =
-    props;
+  const {
+    options,
+    slides,
+    plugins,
+    slideStyle,
+    containerStyle,
+    mediaType,
+    thumbnails,
+  } = props;
   const [emblaRef] = useEmblaCarousel(options, plugins);
 
   return (
@@ -24,6 +31,7 @@ const EmblaCarousel = (props) => {
                   controls
                   type="video/mp4"
                   preload="true"
+                  poster={thumbnails ? thumbnails[index] : null}
                 />
               ) : (
                 <Image
