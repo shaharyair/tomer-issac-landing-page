@@ -28,7 +28,7 @@ function MarketingGuidanceVideoCarousel() {
       id="marketing-guidance-videos"
     >
       <h1 className="text-4xl font-thin text-white drop-shadow-md">
-        סרטי שיווק והדרכה
+        <span className="text-main">סרטי</span> שיווק והדרכה
       </h1>
       <EmblaCarousel
         slideStyle={
@@ -56,7 +56,7 @@ function StillImagesCarousel() {
       id="still-images"
     >
       <h1 className="text-4xl font-thin text-white drop-shadow-md">
-        תמונות סטילס
+        <span className="text-main">תמונות</span> סטילס
       </h1>
       <EmblaCarousel
         slideStyle={
@@ -82,7 +82,9 @@ function MashupVideosCarousel() {
       className="mt-5 flex h-full w-full flex-col items-center justify-center gap-5"
       id="mashups-videos"
     >
-      <h1 className="text-4xl font-thin text-white drop-shadow-md">משאפים</h1>
+      <h1 className="text-4xl font-thin text-white drop-shadow-md">
+        <span className="text-main">מש</span>אפים
+      </h1>
       <EmblaCarousel
         slideStyle={
           "w-[85vw] lg:w-[35vw] h-[45vh] pt-5 mx-2 drop drop-shadow-sm bg-black/20"
@@ -109,7 +111,7 @@ function MusicalClipsCarousel() {
       id="musical-clips"
     >
       <h1 className="text-4xl font-thin text-white drop-shadow-md">
-        קליפים מוזיקליים
+        <span className="text-main">קליפים</span> מוזיקליים
       </h1>
       <EmblaCarousel
         slideStyle={
@@ -137,7 +139,7 @@ function PodcastsEditsCarousel() {
       id="podcasts-edits"
     >
       <h1 className="text-4xl font-thin text-white drop-shadow-md">
-        עריכת פודקאסטים
+        <span className="text-main">עריכת</span> פודקאסטים
       </h1>
       <EmblaCarousel
         slideStyle={
