@@ -1,12 +1,13 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import fs from "fs";
-import path from "path";
 
 export async function POST(request) {
   const req = await request.json();
 
   const { fullName, phoneNumber } = req;
+
+  const subject = `cashiyado.com | ${fullName} - יצר/ה קשר!`;
 
   const transporter = nodemailer.createTransport({
     host: process.env.EMAIL_HOST,
@@ -18,18 +19,11 @@ export async function POST(request) {
     },
   });
 
-  // returns the current working directory of the Node.js process.
-  const currentDirectory = process.cwd();
-
-  const emailTemplatePath = path.join(
-    currentDirectory,
-    "app/api/sendEmail/emailTemplate.html",
-  );
-
   // Read the email template file
-  const emailTemplate = fs.readFileSync(emailTemplatePath, "utf-8");
-
-  const subject = `cashiyado.com | ${fullName} - יצר/ה קשר!`;
+  const emailTemplate = fs.readFileSync(
+    "templates/emailTemplate.html",
+    "utf-8",
+  );
 
   // Replace placeholders in the template with actual values
   const emailContent = emailTemplate
