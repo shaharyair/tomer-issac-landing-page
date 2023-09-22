@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import fs from "fs";
+import path from "path";
 
 export async function POST(request) {
   const req = await request.json();
@@ -20,11 +21,13 @@ export async function POST(request) {
   });
 
   try {
-    // Read the email template file
-    const emailTemplate = fs.readFileSync(
-      "templates/emailTemplate.html",
-      "utf-8",
+    const emailTemplatePath = path.join(
+      process.cwd(),
+      "templates",
+      "emailTemplate.html",
     );
+
+    const emailTemplate = fs.readFileSync(emailTemplatePath, "utf-8");
 
     // Replace placeholders in the template with actual values
     const emailContent = emailTemplate
