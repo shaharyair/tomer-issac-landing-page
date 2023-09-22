@@ -68,7 +68,7 @@ const ContactTomer = () => {
           className="flex w-full max-w-5xl flex-col items-center justify-center gap-6 p-6 text-center lg:flex-row lg:gap-14"
           style={{ direction: "rtl" }}
         >
-          <h1 className="drop-shadow-stroke whitespace-nowrap text-3xl font-semibold text-white lg:text-4xl">
+          <h1 className="whitespace-nowrap text-3xl font-semibold text-white drop-shadow-stroke lg:text-4xl">
             <span className="text-main">צור</span> קשר
           </h1>
           <form
@@ -83,7 +83,7 @@ const ContactTomer = () => {
               title="שם מלא צריך לכלול רק אותיות בעברית או באנגלית."
               value={emailData.fullName}
               onChange={handleChange}
-              className="w-full max-w-[500px] rounded-md bg-gray-300 px-5 py-3 text-right placeholder:text-gray-700"
+              className="w-full max-w-[500px] rounded-md bg-gray-300 px-5 py-3 text-right placeholder:text-gray-700 autofill:shadow-[inset_0_0_0px_1000px_rgb(209,213,219)]"
               required
             />
             <input
@@ -95,7 +95,7 @@ const ContactTomer = () => {
               title="מספר הטלפון צריך לכלול רק מספרים ו10 ספרות."
               value={emailData.phoneNumber}
               onChange={handleChange}
-              className="w-full max-w-[500px] rounded-md bg-gray-300 px-5 py-3 text-right placeholder:text-gray-700"
+              className="w-full max-w-[500px] rounded-md bg-gray-300 px-5 py-3 text-right placeholder:text-gray-700 autofill:shadow-[inset_0_0_0px_1000px_rgb(209,213,219)]"
               required
             />
             <Button
