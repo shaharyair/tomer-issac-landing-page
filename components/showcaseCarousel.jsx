@@ -24,129 +24,104 @@ export default function ShowcaseCarousel() {
 
 function MarketingGuidanceVideoCarousel() {
   return (
-    <div
-      className="mt-5 flex h-full w-full flex-col items-center justify-center gap-5"
-      id="marketing-guidance-videos"
-    >
-      <h1 className="drop-shadow-stroke text-4xl font-thin text-white">
-        <span className="text-main">סרטי</span> שיווק והדרכה
-      </h1>
-      <EmblaCarousel
-        slideStyle={
-          "w-[85vw] lg:w-[35vw] h-[45vh] pt-5 mx-2 drop drop-shadow-sm bg-black/20"
-        }
-        containerStyle={"overflow-hidden"}
-        options={{
-          loop: true,
-          align: "center",
-          skipSnaps: true,
-          duration: 50,
-          slidesToScroll: 1,
-        }}
+    <>
+      <Carousel
+        id="marketing-guidance-videos"
         slides={marketingGuidanceVideosUrl}
-        mediaType="video"
+        title={
+          <>
+            <span className="text-main">סרטי</span> שיווק והדרכה
+          </>
+        }
+        media="video"
       />
-    </div>
+    </>
   );
 }
 
 function StillImagesCarousel() {
   return (
-    <div
-      className="mt-5 flex h-full w-full flex-col items-center justify-center gap-1"
-      id="still-images"
-    >
-      <h1 className="drop-shadow-stroke text-4xl font-thin text-white">
-        <span className="text-main">תמונות</span> סטילס
-      </h1>
-      <EmblaCarousel
-        slideStyle={
-          "w-[85vw] lg:w-[35vw] h-[45vh] pt-5 mx-2 drop drop-shadow-sm object-cover object-center"
-        }
-        containerStyle={"overflow-hidden"}
-        options={{
-          loop: true,
-          align: "center",
-          skipSnaps: true,
-          duration: 50,
-          slidesToScroll: 1,
-        }}
+    <>
+      <Carousel
+        id="still-images"
         slides={stillImages}
+        title={
+          <>
+            <span className="text-main">תמונות</span> סטילס
+          </>
+        }
       />
-    </div>
+    </>
   );
 }
 
 function MashupVideosCarousel() {
   return (
-    <div
-      className="mt-5 flex h-full w-full flex-col items-center justify-center gap-5"
-      id="mashups-videos"
-    >
-      <h1 className="drop-shadow-stroke text-4xl font-thin text-white">
-        <span className="text-main">מש</span>אפים
-      </h1>
-      <EmblaCarousel
-        slideStyle={
-          "w-[85vw] lg:w-[35vw] h-[45vh] pt-5 mx-2 drop drop-shadow-sm bg-black/20"
-        }
-        containerStyle={"overflow-hidden"}
-        options={{
-          loop: true,
-          align: "center",
-          skipSnaps: true,
-          duration: 50,
-          slidesToScroll: 1,
-        }}
+    <>
+      <Carousel
+        id="mashups-videos"
         slides={mashupVideos}
+        title={
+          <>
+            <span className="text-main">מש</span>אפים
+          </>
+        }
+        media="video"
         thumbnails={mashupThumbnails}
-        mediaType="video"
       />
-    </div>
+    </>
   );
 }
 
 function MusicalClipsCarousel() {
   return (
-    <div
-      className="mt-5 flex h-full w-full flex-col items-center justify-center gap-5"
-      id="musical-clips"
-    >
-      <h1 className="drop-shadow-stroke text-4xl font-thin text-white">
-        <span className="text-main">קליפים</span> מוזיקליים
-      </h1>
-      <EmblaCarousel
-        slideStyle={
-          "w-[85vw] lg:w-[35vw] h-[45vh] pt-5 mx-2 drop drop-shadow-sm bg-black/20"
-        }
-        containerStyle={"overflow-hidden"}
-        options={{
-          loop: true,
-          align: "center",
-          skipSnaps: true,
-          duration: 50,
-          slidesToScroll: 1,
-        }}
+    <>
+      <Carousel
+        id="musical-clips"
         slides={musicalClips}
-        mediaType="video"
+        title={
+          <>
+            <span className="text-main">קליפים</span> מוזיקליים
+          </>
+        }
+        media="video"
       />
-    </div>
+    </>
   );
 }
 
 function PodcastsEditsCarousel() {
   return (
+    <>
+      <Carousel
+        id="podcasts-edits"
+        slides={podcastsEditsVideos}
+        title={
+          <>
+            <span className="text-main">עריכת</span> פודקאסטים
+          </>
+        }
+        media="video"
+      />
+    </>
+  );
+}
+
+function Carousel(props) {
+  const { id, slides, title, media, thumbnails } = props;
+
+  return (
     <div
       className="mt-5 flex h-full w-full flex-col items-center justify-center gap-5"
-      id="podcasts-edits"
+      id={id}
     >
-      <h1 className="drop-shadow-stroke text-4xl font-thin text-white">
-        <span className="text-main">עריכת</span> פודקאסטים
+      <h1 className="text-4xl font-thin text-white drop-shadow-stroke">
+        {title}
       </h1>
       <EmblaCarousel
-        slideStyle={
-          "w-[85vw] lg:w-[35vw] h-[45vh] pt-5 mx-2 drop drop-shadow-sm bg-black/20"
-        }
+        slideStyle={`w-[85vw] lg:w-[35vw] h-[45vh] pt-5 mx-2 drop drop-shadow-sm bg-black/20 object-center ${
+          media !== "video" && "object-cover"
+        }`}
         containerStyle={"overflow-hidden"}
         options={{
           loop: true,
@@ -155,8 +130,9 @@ function PodcastsEditsCarousel() {
           duration: 50,
           slidesToScroll: 1,
         }}
-        slides={podcastsEditsVideos}
-        mediaType="video"
+        slides={slides}
+        mediaType={media}
+        thumbnails={thumbnails}
       />
     </div>
   );
