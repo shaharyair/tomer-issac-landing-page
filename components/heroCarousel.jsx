@@ -35,12 +35,15 @@ export default function HeroCarousel() {
           plugins={[Autoplay(autoplayOptions)]}
         />
         <div
-          className=" absolute left-1/2 top-[55%] flex -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-16 text-center lg:gap-20"
+          className=" absolute left-1/2 top-[55%] flex -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-10 text-center"
           style={{ direction: "rtl" }}
         >
           <h1 className=" whitespace-nowrap text-5xl font-thin tracking-widest text-white opacity-75 drop-shadow-md lg:text-8xl">
             TOMER AIZIK
           </h1>
+          <h2 className="mb-14 whitespace-nowrap text-xl font-thin tracking-widest text-white opacity-75 drop-shadow-md lg:text-3xl">
+            צלם, עורך ויוצר תוכן
+          </h2>
           <p className="text-lg font-thin text-white opacity-75 drop-shadow-md lg:text-2xl">
             לפרטים נוספים:
           </p>
