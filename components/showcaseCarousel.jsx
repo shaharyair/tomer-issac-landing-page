@@ -119,7 +119,7 @@ function Carousel(props) {
         {title}
       </h1>
       <EmblaCarousel
-        slideStyle={`w-[85vw] lg:w-[35vw] h-[45vh] pt-5 mx-2 drop drop-shadow-sm bg-black/20 object-center ${
+        slideStyle={`w-[85vw] lg:w-[35vw] h-[45vh] mx-3 drop drop-shadow-sm object-center ${
           media !== "video" && "object-cover"
         }`}
         containerStyle={"overflow-hidden w-screen"}
