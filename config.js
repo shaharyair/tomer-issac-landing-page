@@ -16,11 +16,10 @@ import Img6 from "public/assets/heroCarousel/8.JPG";
 import Img7 from "public/assets/heroCarousel/11.JPG";
 import Img8 from "public/assets/heroCarousel/13.JPG";
 import Img9 from "public/assets/heroCarousel/14.JPG";
-import Img10 from "public/assets/heroCarousel/15.JPG";
-import Img11 from "public/assets/heroCarousel/16.JPG";
-import Img12 from "public/assets/heroCarousel/17.JPG";
-import Img13 from "public/assets/heroCarousel/18.JPG";
-import Img14 from "public/assets/heroCarousel/19.JPG";
+import Img10 from "public/assets/heroCarousel/16.JPG";
+import Img11 from "public/assets/heroCarousel/17.JPG";
+import Img12 from "public/assets/heroCarousel/18.JPG";
+import Img13 from "public/assets/heroCarousel/19.JPG";
 
 const stillImages = [
   Img1,
@@ -36,7 +35,6 @@ const stillImages = [
   Img11,
   Img12,
   Img13,
-  Img14,
 ];
 
 const marketingGuidanceVideosUrl = [
