@@ -1,16 +1,34 @@
 "use client";
 
+import { useState, useCallback } from "react";
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 const EmblaCarousel = (props) => {
-  const { options, slides, plugins, slideStyle, containerStyle, mediaType } =
-    props;
+  const {
+    options,
+    slides,
+    plugins,
+    slideStyle,
+    containerStyle,
+    mediaType,
+    arrows,
+  } = props;
 
-  const [emblaRef] = useEmblaCarousel(options, plugins);
+  const [emblaRef, embla] = useEmblaCarousel(options, plugins);
+
+  const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
+  const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
 
   return (
-    <div className="embla">
+    <div className="embla relative">
+      {arrows && (
+        <>
+          <PrevSlideButton onClick={scrollPrev} />
+          <NextSlideButton onClick={scrollNext} />
+        </>
+      )}
       <div className={containerStyle} ref={emblaRef}>
         <div className="flex">
           {slides.map((item, index) => {
@@ -23,7 +41,6 @@ const EmblaCarousel = (props) => {
                   <div className={slideStyle}>
                     <iframe
                       src={item}
-                      frameborder="0"
                       allowFullScreen
                       width="100%"
                       height="100%"
@@ -48,3 +65,31 @@ const EmblaCarousel = (props) => {
 };
 
 export default EmblaCarousel;
+
+function PrevSlideButton({ onClick }) {
+  return (
+    <>
+      <button
+        type="button"
+        className="absolute right-3 top-1/2 z-10 -translate-y-1/2 text-xl text-white drop-shadow-stroke transition-colors hover:text-main lg:right-5 lg:text-5xl"
+        onClick={onClick}
+      >
+        <FaChevronRight />
+      </button>
+    </>
+  );
+}
+
+function NextSlideButton({ onClick }) {
+  return (
+    <>
+      <button
+        type="button"
+        className="absolute left-3 top-1/2 z-10 -translate-y-1/2 text-xl text-white drop-shadow-stroke transition-colors hover:text-main lg:left-5 lg:text-5xl"
+        onClick={onClick}
+      >
+        <FaChevronLeft />
+      </button>
+    </>
+  );
+}
