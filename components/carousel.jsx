@@ -71,7 +71,7 @@ function PrevSlideButton({ onClick }) {
     <>
       <button
         type="button"
-        className="absolute right-3 top-1/2 z-10 -translate-y-1/2 text-xl text-white drop-shadow-stroke transition-colors hover:text-main lg:right-5 lg:text-5xl"
+        className="absolute right-1 top-1/2 z-10 -translate-y-1/2 p-2 text-2xl text-white drop-shadow-stroke transition-colors hover:text-main lg:text-4xl"
         onClick={onClick}
       >
         <FaChevronRight />
@@ -85,7 +85,7 @@ function NextSlideButton({ onClick }) {
     <>
       <button
         type="button"
-        className="absolute left-3 top-1/2 z-10 -translate-y-1/2 text-xl text-white drop-shadow-stroke transition-colors hover:text-main lg:left-5 lg:text-5xl"
+        className="absolute left-1 top-1/2 z-10 -translate-y-1/2 p-2 text-2xl text-white drop-shadow-stroke transition-colors hover:text-main  lg:text-4xl"
         onClick={onClick}
       >
         <FaChevronLeft />
