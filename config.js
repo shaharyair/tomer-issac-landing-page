@@ -1,21 +1,19 @@
-import Hero1 from "./public/assets/12.JPG";
-import Hero2 from "./public/assets/1.JPG";
-import Hero3 from "./public/assets/9.JPG";
-import Hero4 from "./public/assets/6.JPG";
-
-import Img1 from "./public/assets/2.JPG";
-import Img2 from "./public/assets/3.JPG";
-import Img3 from "./public/assets/4.JPG";
-import Img4 from "./public/assets/5.JPG";
-import Img5 from "./public/assets/7.JPG";
-import Img6 from "./public/assets/8.JPG";
-import Img7 from "./public/assets/11.JPG";
-import Img8 from "./public/assets/13.JPG";
-import Img9 from "./public/assets/14.JPG";
-import Img10 from "./public/assets/16.JPG";
-import Img11 from "./public/assets/17.JPG";
-import Img12 from "./public/assets/18.JPG";
-import Img13 from "./public/assets/19.JPG";
+import Hero2 from "public/assets/1.JPG";
+import Img1 from "public/assets/2.JPG";
+import Img2 from "public/assets/3.JPG";
+import Img3 from "public/assets/4.JPG";
+import Img4 from "public/assets/5.JPG";
+import Hero4 from "public/assets/6.JPG";
+import Img5 from "public/assets/7.JPG";
+import Img6 from "public/assets/8.JPG";
+import Hero3 from "public/assets/9.JPG";
+import Img7 from "public/assets/10.JPG";
+import Hero1 from "public/assets/11.JPG";
+import Img8 from "public/assets/12.JPG";
+import Img9 from "public/assets/13.JPG";
+import Img10 from "public/assets/14.JPG";
+import Img11 from "public/assets/15.JPG";
+import Img12 from "public/assets/16.JPG";
 
 const heroCarouselImages = [Hero1, Hero2, Hero3, Hero4];
 
@@ -32,7 +30,6 @@ const stillImages = [
   Img10,
   Img11,
   Img12,
-  Img13,
 ];
 
 const marketingGuidanceVideosUrl = [
