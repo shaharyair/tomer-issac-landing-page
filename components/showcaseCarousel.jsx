@@ -127,6 +127,8 @@ function Carousel(props) {
           loop: true,
           align: "center",
           skipSnaps: true,
+          duration: 50,
+          slidesToScroll: 1,
         }}
         slides={slides}
         mediaType={media}
