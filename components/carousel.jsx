@@ -2,26 +2,12 @@
 
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
-import { useInView } from "react-intersection-observer";
 
 const EmblaCarousel = (props) => {
-  const {
-    options,
-    slides,
-    plugins,
-    slideStyle,
-    containerStyle,
-    mediaType,
-    thumbnails,
-  } = props;
+  const { options, slides, plugins, slideStyle, containerStyle, mediaType } =
+    props;
 
   const [emblaRef] = useEmblaCarousel(options, plugins);
-
-  const [videoRef] = useInView({
-    threshold: 0.5,
-    rootMargin: "-50px 0px",
-    triggerOnce: true,
-  });
 
   return (
     <div className="embla">
@@ -34,15 +20,15 @@ const EmblaCarousel = (props) => {
                 key={index}
               >
                 {mediaType === "video" ? (
-                  <video
-                    className={slideStyle}
-                    src={item}
-                    type="video/mp4"
-                    preload="auto"
-                    controls
-                    poster={thumbnails ? thumbnails[index] : null}
-                    ref={videoRef}
-                  />
+                  <div className={slideStyle}>
+                    <iframe
+                      src={item}
+                      frameborder="0"
+                      allowFullScreen
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
                 ) : (
                   <Image
                     className={slideStyle}
@@ -50,7 +36,6 @@ const EmblaCarousel = (props) => {
                     alt="/"
                     width={1920}
                     height={1080}
-                    loading="lazy"
                   />
                 )}
               </div>
