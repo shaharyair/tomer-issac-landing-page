@@ -1,11 +1,7 @@
-import getDirectDriveLink from "./utils/getDirectDriveLink";
-
 import Hero1 from "./public/assets/12.JPG";
 import Hero2 from "./public/assets/1.JPG";
 import Hero3 from "./public/assets/9.JPG";
 import Hero4 from "./public/assets/6.JPG";
-
-const heroCarouselImages = [Hero1, Hero2, Hero3, Hero4];
 
 import Img1 from "./public/assets/2.JPG";
 import Img2 from "./public/assets/3.JPG";
@@ -20,6 +16,8 @@ import Img10 from "./public/assets/16.JPG";
 import Img11 from "./public/assets/17.JPG";
 import Img12 from "./public/assets/18.JPG";
 import Img13 from "./public/assets/19.JPG";
+
+const heroCarouselImages = [Hero1, Hero2, Hero3, Hero4];
 
 const stillImages = [
   Img1,
