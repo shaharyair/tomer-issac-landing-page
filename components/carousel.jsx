@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useCallback } from "react";
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
@@ -51,9 +51,8 @@ const EmblaCarousel = (props) => {
                     className={slideStyle}
                     src={item}
                     alt="/"
-                    width={1920}
-                    height={1080}
-                    loading="lazy"
+                    width={750}
+                    height={750}
                   />
                 )}
               </div>
