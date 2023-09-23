@@ -28,7 +28,7 @@ const stillImages = [
     "https://drive.google.com/file/d/1IHmREYTNilYcUL3SQWxXN8bLU2aE9nhO/preview",
   ),
   getDirectDriveLink(
-    "https://drive.google.com/file/d/12ZYQrYcUz8Wkk2rPaDBwx9g3jCi-XGgS/preview",
+    "https://drive.google.com/file/d/1zIhnutq6PGPxIS-VUpt6kw0vluhIBtsb/preview",
   ),
   getDirectDriveLink(
     "https://drive.google.com/file/d/10_HKXzFqUKx-QJwoOImDHdnxwzopIY37/preview",
