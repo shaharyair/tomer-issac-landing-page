@@ -23,7 +23,6 @@ const EmblaCarousel = (props) => {
                   <div className={slideStyle}>
                     <iframe
                       src={item}
-                      frameborder="0"
                       allowFullScreen
                       width="100%"
                       height="100%"
