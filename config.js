@@ -1,25 +1,25 @@
 import getDirectDriveLink from "./utils/getDirectDriveLink";
 
-import Hero1 from "public/assets/heroCarousel/12.JPG";
-import Hero2 from "public/assets/heroCarousel/1.JPG";
-import Hero3 from "public/assets/heroCarousel/9.JPG";
-import Hero4 from "public/assets/heroCarousel/6.JPG";
+import Hero1 from "./public/assets/12.JPG";
+import Hero2 from "./public/assets/1.JPG";
+import Hero3 from "./public/assets/9.JPG";
+import Hero4 from "./public/assets/6.JPG";
 
 const heroCarouselImages = [Hero1, Hero2, Hero3, Hero4];
 
-import Img1 from "public/assets/heroCarousel/2.JPG";
-import Img2 from "public/assets/heroCarousel/3.JPG";
-import Img3 from "public/assets/heroCarousel/4.JPG";
-import Img4 from "public/assets/heroCarousel/5.JPG";
-import Img5 from "public/assets/heroCarousel/7.JPG";
-import Img6 from "public/assets/heroCarousel/8.JPG";
-import Img7 from "public/assets/heroCarousel/11.JPG";
-import Img8 from "public/assets/heroCarousel/13.JPG";
-import Img9 from "public/assets/heroCarousel/14.JPG";
-import Img10 from "public/assets/heroCarousel/16.JPG";
-import Img11 from "public/assets/heroCarousel/17.JPG";
-import Img12 from "public/assets/heroCarousel/18.JPG";
-import Img13 from "public/assets/heroCarousel/19.JPG";
+import Img1 from "./public/assets/2.JPG";
+import Img2 from "./public/assets/3.JPG";
+import Img3 from "./public/assets/4.JPG";
+import Img4 from "./public/assets/5.JPG";
+import Img5 from "./public/assets/7.JPG";
+import Img6 from "./public/assets/8.JPG";
+import Img7 from "./public/assets/11.JPG";
+import Img8 from "./public/assets/13.JPG";
+import Img9 from "./public/assets/14.JPG";
+import Img10 from "./public/assets/16.JPG";
+import Img11 from "./public/assets/17.JPG";
+import Img12 from "./public/assets/18.JPG";
+import Img13 from "./public/assets/19.JPG";
 
 const stillImages = [
   Img1,
