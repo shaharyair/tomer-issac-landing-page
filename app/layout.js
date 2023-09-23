@@ -8,8 +8,8 @@ import WhatsappButton from "@/components/whatsappButton";
 const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Tomer Aizik - Photography",
-  description: "Tomer Aizik - צלם, עורך ויוצר תוכן ",
+  title: "Tomer Cashiyado - Photography",
+  description: "Tomer Cashiyado - צלם, עורך ויוצר תוכן ",
 };
 
 export default function RootLayout({ children }) {
