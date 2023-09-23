@@ -1,11 +1,43 @@
 import getDirectDriveLink from "./utils/getDirectDriveLink";
 
-import Hero1 from "public/assets/heroCarousel/Hero1.JPG";
-import Hero2 from "public/assets/heroCarousel/Hero2.JPG";
-import Hero3 from "public/assets/heroCarousel/Hero3.JPG";
-import Hero4 from "public/assets/heroCarousel/Hero4.JPG";
+import Hero1 from "public/assets/heroCarousel/12.JPG";
+import Hero2 from "public/assets/heroCarousel/1.JPG";
+import Hero3 from "public/assets/heroCarousel/9.JPG";
+import Hero4 from "public/assets/heroCarousel/6.JPG";
 
 const heroCarouselImages = [Hero1, Hero2, Hero3, Hero4];
+
+import Img1 from "public/assets/heroCarousel/2.JPG";
+import Img2 from "public/assets/heroCarousel/3.JPG";
+import Img3 from "public/assets/heroCarousel/4.JPG";
+import Img4 from "public/assets/heroCarousel/5.JPG";
+import Img5 from "public/assets/heroCarousel/7.JPG";
+import Img6 from "public/assets/heroCarousel/8.JPG";
+import Img7 from "public/assets/heroCarousel/11.JPG";
+import Img8 from "public/assets/heroCarousel/13.JPG";
+import Img9 from "public/assets/heroCarousel/14.JPG";
+import Img10 from "public/assets/heroCarousel/15.JPG";
+import Img11 from "public/assets/heroCarousel/16.JPG";
+import Img12 from "public/assets/heroCarousel/17.JPG";
+import Img13 from "public/assets/heroCarousel/18.JPG";
+import Img14 from "public/assets/heroCarousel/19.JPG";
+
+const stillImages = [
+  Img1,
+  Img2,
+  Img3,
+  Img4,
+  Img5,
+  Img6,
+  Img7,
+  Img8,
+  Img9,
+  Img10,
+  Img11,
+  Img12,
+  Img13,
+  Img14,
+];
 
 const marketingGuidanceVideosUrl = [
   "https://drive.google.com/file/d/12wtHXP85WUJ6-NEz7Dw5IFCMNQNou_Ru/preview",
@@ -15,39 +47,6 @@ const marketingGuidanceVideosUrl = [
   "https://drive.google.com/file/d/1eFOci_LcLkBz2qS6Y4LEkX8GPPIfxKzB/preview",
   "https://drive.google.com/file/d/12OcEWseLF3tnzzv8Cu9pkqNa1Iztr6E8/preview",
   "https://drive.google.com/file/d/1eekrjbZ-2ULWa6cDvXpZMQJBPIF2TvZ0/preview",
-];
-
-const stillImages = [
-  getDirectDriveLink(
-    "https://drive.google.com/file/d/17N0dIdgAgzjre-a2c1vtMak4Wbn5rmPn/preview",
-  ),
-  getDirectDriveLink(
-    "https://drive.google.com/file/d/1L_MnPqdniA-R84lhEfQNJbPymndrHX0E/preview",
-  ),
-  getDirectDriveLink(
-    "https://drive.google.com/file/d/1IHmREYTNilYcUL3SQWxXN8bLU2aE9nhO/preview",
-  ),
-  getDirectDriveLink(
-    "https://drive.google.com/file/d/1zIhnutq6PGPxIS-VUpt6kw0vluhIBtsb/preview",
-  ),
-  getDirectDriveLink(
-    "https://drive.google.com/file/d/10_HKXzFqUKx-QJwoOImDHdnxwzopIY37/preview",
-  ),
-  getDirectDriveLink(
-    "https://drive.google.com/file/d/1nNuMJoi-WbqsxfTldgvJ9zl4uiW9R6-b/preview",
-  ),
-  getDirectDriveLink(
-    "https://drive.google.com/file/d/1JOVRKl7Cd8pUvaniH_YjEKA24LiFvQgh/preview",
-  ),
-  getDirectDriveLink(
-    "https://drive.google.com/file/d/1rgqpmb6OpajiCrl3yS2sLCbjZetQg4d6/preview",
-  ),
-  getDirectDriveLink(
-    "https://drive.google.com/file/d/1xty-hLYmsXJ1WDOFTPzU0CLzpe7T4pB1/preview",
-  ),
-  getDirectDriveLink(
-    "https://drive.google.com/file/d/1z-37Z26X5n_fP45K8vujmUDy45lSLqDX/preview",
-  ),
 ];
 
 const musicalClips = [
