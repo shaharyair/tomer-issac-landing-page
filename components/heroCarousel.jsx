@@ -28,7 +28,6 @@ export default function HeroCarousel() {
             loop: true,
             align: "center",
             skipSnaps: true,
-            duration: 50,
           }}
           slides={heroCarouselImages}
           plugins={[Autoplay(autoplayOptions)]}
