@@ -51,9 +51,8 @@ const EmblaCarousel = (props) => {
                     className={slideStyle}
                     src={item}
                     alt="/"
-                    width={1920}
-                    height={1080}
-                    loading="lazy"
+                    width={750}
+                    height={750}
                   />
                 )}
               </div>
