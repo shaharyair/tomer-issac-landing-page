@@ -4,7 +4,6 @@ import EmblaCarousel from "./carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 import Button from "./button";
-import Link from "next/link";
 
 import { heroCarouselImages } from "@/config";
 

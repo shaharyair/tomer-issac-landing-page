@@ -1,11 +1,11 @@
 import getDirectDriveLink from "./utils/getDirectDriveLink";
 
-const heroCarouselImages = [
-  "https://drive.google.com/file/d/1rqRSIE_P9cMAnNPl9BOCNLSj7o8Dac23/preview",
-  "https://drive.google.com/file/d/1iSG3_277leXgwNdgtsdhXGdMet6h9WEy/preview",
-  "https://drive.google.com/file/d/1oR60ccHdMLwG3H9qCsvriIayGb6SSm6L/preview",
-  "https://drive.google.com/file/d/1SyPVQ3mru2Kvhcvp4gd52F8FHvY62rCe/preview",
-];
+import Hero1 from "public/assets/heroCarousel/Hero1.JPG";
+import Hero2 from "public/assets/heroCarousel/Hero2.JPG";
+import Hero3 from "public/assets/heroCarousel/Hero3.JPG";
+import Hero4 from "public/assets/heroCarousel/Hero4.JPG";
+
+const heroCarouselImages = [Hero1, Hero2, Hero3, Hero4];
 
 const marketingGuidanceVideosUrl = [
   "https://drive.google.com/file/d/12wtHXP85WUJ6-NEz7Dw5IFCMNQNou_Ru/preview",
