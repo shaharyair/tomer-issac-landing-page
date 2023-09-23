@@ -67,7 +67,7 @@ const EmblaCarousel = (props) => {
 
 export default EmblaCarousel;
 
-function PrevSlideButton({ onClick }) {
+function NextSlideButton({ onClick }) {
   return (
     <>
       <button
@@ -81,7 +81,7 @@ function PrevSlideButton({ onClick }) {
   );
 }
 
-function NextSlideButton({ onClick }) {
+function PrevSlideButton({ onClick }) {
   return (
     <>
       <button
