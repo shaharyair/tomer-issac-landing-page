@@ -11,7 +11,7 @@ import { FaPhone, FaWhatsapp } from "react-icons/fa6";
 
 export default function HeroCarousel() {
   const autoplayOptions = {
-    delay: 7500,
+    delay: 10000,
     stopOnInteraction: false,
     rootNode: (emblaRoot) => emblaRoot.parentElement,
   };
