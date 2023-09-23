@@ -53,6 +53,7 @@ const EmblaCarousel = (props) => {
                     alt="/"
                     width={1920}
                     height={1080}
+                    loading="lazy"
                   />
                 )}
               </div>
