@@ -122,7 +122,7 @@ function Carousel(props) {
         slideStyle={`w-[85vw] lg:w-[35vw] h-[45vh] pt-5 mx-2 drop drop-shadow-sm bg-black/20 object-center ${
           media !== "video" && "object-cover"
         }`}
-        containerStyle={"overflow-hidden"}
+        containerStyle={"overflow-hidden w-screen"}
         options={{
           loop: true,
           align: "center",

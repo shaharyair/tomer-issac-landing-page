@@ -16,7 +16,7 @@ const EmblaCarousel = (props) => {
           {slides.map((item, index) => {
             return (
               <div
-                className="pointer-events-none relative flex-auto flex-shrink-0 flex-grow-0"
+                className="relative flex-auto flex-shrink-0 flex-grow-0"
                 key={index}
               >
                 {mediaType === "video" ? (
