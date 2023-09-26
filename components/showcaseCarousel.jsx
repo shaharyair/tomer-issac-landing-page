@@ -47,7 +47,7 @@ function StillImagesCarousel() {
         slides={stillImages}
         title={
           <>
-            <span className="text-main">תמונות</span> סטילס
+            <span className="text-main">צילום</span> הופעות ואירועים
           </>
         }
       />
