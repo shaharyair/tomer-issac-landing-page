@@ -134,7 +134,7 @@ function ComponentLinks({ mobileNavbar }) {
           סרטי שיווק והדרכה
         </ScrollLinkComponent>
         <ScrollLinkComponent to="still-images">
-          תמונות סטילס
+          צילום הופעות ואירועים
         </ScrollLinkComponent>
         <ScrollLinkComponent to="musical-clips">
           קליפים מוזיקליים
