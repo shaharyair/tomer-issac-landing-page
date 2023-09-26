@@ -39,6 +39,7 @@ const marketingGuidanceVideosUrl = [
   "https://drive.google.com/file/d/1rzbsEPAo9xB6WwQt-HLhxrMTHm9u_dd4/preview",
   "https://drive.google.com/file/d/1eFOci_LcLkBz2qS6Y4LEkX8GPPIfxKzB/preview",
   "https://drive.google.com/file/d/12OcEWseLF3tnzzv8Cu9pkqNa1Iztr6E8/preview",
+  "https://drive.google.com/file/d/1jU69lcUfR_Yl7BxpGXZdhHdNL_HlsBpf/preview",
   "https://drive.google.com/file/d/1eekrjbZ-2ULWa6cDvXpZMQJBPIF2TvZ0/preview",
 ];
 
