@@ -9,7 +9,7 @@ import AccessibilityMenu from "@/components/accessibilityMenu";
 const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Tomer Cashiyado - Photography",
+  title: "Tomer Cashiyado",
   description: "Tomer Cashiyado - צלם, עורך ויוצר תוכן ",
 };
 
