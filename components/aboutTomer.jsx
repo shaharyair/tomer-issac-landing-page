@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { stillImages } from "@/config";
-import tomerImage from "public/assets/AboutTomer.JPG";
+import Image from "next/image";
+import tomerImage from "public/assets/AboutTomer.webp";
 
 function AboutTomer() {
   return (
@@ -12,6 +12,7 @@ function AboutTomer() {
           width={1920}
           height={1080}
           className=" absolute left-0 top-0 -z-10 h-full object-cover object-center brightness-50"
+          loading="lazy"
         />
         <div
           className="container flex max-w-5xl flex-col items-center justify-center gap-8 p-10 lg:flex-row"

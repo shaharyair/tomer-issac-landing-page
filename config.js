@@ -1,19 +1,19 @@
-import Hero2 from "public/assets/img1.JPG";
-import Img1 from "public/assets/img2.JPG";
-import Img2 from "public/assets/img3.JPG";
-import Img3 from "public/assets/img4.JPG";
-import Img4 from "public/assets/img5.JPG";
-import Hero4 from "public/assets/img6.JPG";
-import Img5 from "public/assets/img7.JPG";
-import Img6 from "public/assets/img8.JPG";
-import Hero3 from "public/assets/img9.JPG";
-import Img7 from "public/assets/img10.JPG";
-import Hero1 from "public/assets/img11.JPG";
-import Img8 from "public/assets/img12.JPG";
-import Img9 from "public/assets/img13.JPG";
-import Img10 from "public/assets/img14.JPG";
-import Img11 from "public/assets/img15.JPG";
-import Img12 from "public/assets/img16.JPG";
+import Hero2 from "public/assets/img1.webp";
+import Img7 from "public/assets/img10.webp";
+import Hero1 from "public/assets/img11.webp";
+import Img8 from "public/assets/img12.webp";
+import Img9 from "public/assets/img13.webp";
+import Img10 from "public/assets/img14.webp";
+import Img11 from "public/assets/img15.webp";
+import Img12 from "public/assets/img16.webp";
+import Img1 from "public/assets/img2.webp";
+import Img2 from "public/assets/img3.webp";
+import Img3 from "public/assets/img4.webp";
+import Img4 from "public/assets/img5.webp";
+import Hero4 from "public/assets/img6.webp";
+import Img5 from "public/assets/img7.webp";
+import Img6 from "public/assets/img8.webp";
+import Hero3 from "public/assets/img9.webp";
 
 const heroCarouselImages = [Hero1, Hero2, Hero3, Hero4];
 
@@ -74,9 +74,9 @@ const podcastsEditsVideos = [
 export {
   heroCarouselImages,
   marketingGuidanceVideosUrl,
-  stillImages,
-  mashupVideos,
   mashupThumbnails,
+  mashupVideos,
   musicalClips,
   podcastsEditsVideos,
+  stillImages,
 };
