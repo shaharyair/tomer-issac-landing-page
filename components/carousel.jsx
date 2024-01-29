@@ -1,8 +1,8 @@
 "use client";
 
-import { useCallback } from "react";
-import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
+import Image from "next/image";
+import { useCallback } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 const EmblaCarousel = (props) => {
@@ -44,6 +44,7 @@ const EmblaCarousel = (props) => {
                       allowFullScreen
                       width="100%"
                       height="100%"
+                      title={`iframe link: ${item}`}
                     />
                   </div>
                 ) : (
@@ -70,6 +71,7 @@ function NextSlideButton({ onClick }) {
   return (
     <>
       <button
+        id="nextSlideButton"
         type="button"
         className="absolute right-1 top-1/2 z-10 -translate-y-1/2 p-2 text-2xl text-white drop-shadow-stroke transition-colors hover:text-main lg:text-4xl"
         onClick={onClick}
@@ -84,6 +86,7 @@ function PrevSlideButton({ onClick }) {
   return (
     <>
       <button
+        id="prevSlideButton"
         type="button"
         className="absolute left-1 top-1/2 z-10 -translate-y-1/2 p-2 text-2xl text-white drop-shadow-stroke transition-colors hover:text-main  lg:text-4xl"
         onClick={onClick}

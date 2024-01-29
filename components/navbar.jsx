@@ -1,12 +1,12 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
 import { Link as ScrollLink } from "react-scroll";
 
 import { Fade as Hamburger } from "hamburger-react";
-import { FaInstagram, FaYoutube, FaFacebookF, FaTiktok } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa6";
 
 function Navbar() {
   const [mobileNavbar, setMobileNavbar] = useState(false);
@@ -160,6 +160,7 @@ function HamburgerButton({ mobileNavbar, handleToggle }) {
           direction="right"
           duration={0.15}
           rounded
+          id="hamburger-button"
         />
       </div>
     </>

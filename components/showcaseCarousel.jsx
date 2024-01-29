@@ -1,6 +1,5 @@
 "use client";
 
-import EmblaCarousel from "./carousel";
 import {
   marketingGuidanceVideosUrl,
   mashupThumbnails,
@@ -9,6 +8,7 @@ import {
   podcastsEditsVideos,
   stillImages,
 } from "@/config";
+import EmblaCarousel from "./carousel";
 
 export default function ShowcaseCarousel() {
   return (
