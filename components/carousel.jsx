@@ -45,6 +45,7 @@ const EmblaCarousel = (props) => {
                       width="100%"
                       height="100%"
                       title={`iframe link: ${item}`}
+                      loading="lazy"
                     />
                   </div>
                 ) : (
@@ -54,6 +55,7 @@ const EmblaCarousel = (props) => {
                     alt="/"
                     width={750}
                     height={750}
+                    loading="lazy"
                   />
                 )}
               </div>
