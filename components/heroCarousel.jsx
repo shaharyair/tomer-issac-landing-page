@@ -43,7 +43,7 @@ export default function HeroCarousel() {
           <h2 className="mb-14 whitespace-nowrap text-xl font-thin tracking-widest text-white opacity-75 drop-shadow-md lg:text-3xl">
             צלם, עורך ויוצר תוכן
           </h2>
-          <p className="text-lg font-thin text-white opacity-75 drop-shadow-md lg:text-2xl">
+          {/* <p className="text-lg font-thin text-white opacity-75 drop-shadow-md lg:text-2xl">
             לפרטים נוספים:
           </p>
           <div className="flex items-center justify-center gap-5 lg:gap-10">
@@ -63,7 +63,7 @@ export default function HeroCarousel() {
                 התקשרו אליי <FaPhone className="text-xl" />
               </a>
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
