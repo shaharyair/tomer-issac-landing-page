@@ -33,6 +33,8 @@ const stillImages = [
 ];
 
 const marketingGuidanceVideosUrl = [
+  "https://drive.google.com/file/d/14JgeAEQORhkoQn33hkQcjPVNnvgh0DY1/preview",
+  "https://drive.google.com/file/d/1THXct2FaoZ-hFLiXX6mtyghgBE715ciP/preview",
   "https://drive.google.com/file/d/12wtHXP85WUJ6-NEz7Dw5IFCMNQNou_Ru/preview",
   "https://drive.google.com/file/d/1yGOer5ShKEjkSXuyf8PiQzi-rlEeyNWk/preview",
   "https://drive.google.com/file/d/1E0nzY9UZ0ZYGkieiuODtwtdQDRbjZw3A/preview",
